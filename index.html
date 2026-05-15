@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sayxronimos — Stoic Content Creator</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0a0a0a; color: #f0f0f0; min-height: 100vh;
+  }
+  header {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    padding: 80px 20px; text-align: center;
+  }
+  header h1 { font-size: 48px; letter-spacing: -1px; margin-bottom: 16px;
+    background: linear-gradient(90deg, #e2c27d, #f5e6c8); -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  header p { font-size: 20px; color: #aab; max-width: 600px; margin: 0 auto 32px; line-height: 1.6; }
+  .badge { display: inline-block; background: #ff2d55; color: white;
+    padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; }
+  .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
+  .section-title { font-size: 28px; color: #e2c27d; margin-bottom: 32px; text-align: center; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 60px; }
+  .card {
+    background: #111; border: 1px solid #222; border-radius: 16px;
+    padding: 28px; transition: border-color .2s;
+  }
+  .card:hover { border-color: #e2c27d44; }
+  .card .icon { font-size: 32px; margin-bottom: 16px; }
+  .card h3 { font-size: 18px; margin-bottom: 10px; color: #f5e6c8; }
+  .card p { color: #888; font-size: 15px; line-height: 1.6; }
+  .tiktok-section {
+    background: #111; border: 1px solid #222; border-radius: 20px;
+    padding: 40px; text-align: center; margin-bottom: 60px;
+  }
+  .tiktok-section h2 { font-size: 24px; margin-bottom: 16px; color: #f5e6c8; }
+  .tiktok-section p { color: #888; max-width: 560px; margin: 0 auto 24px; line-height: 1.7; }
+  .scopes { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+  .scope { background: #1a1a1a; border: 1px solid #333; border-radius: 8px;
+    padding: 8px 16px; font-size: 13px; font-family: monospace; color: #e2c27d; }
+  .flow { display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    justify-content: center; margin: 40px 0; }
+  .step { background: #111; border: 1px solid #222; border-radius: 12px;
+    padding: 16px 20px; text-align: center; min-width: 120px; }
+  .step .num { font-size: 11px; color: #666; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1px; }
+  .step .label { font-size: 14px; color: #f0f0f0; font-weight: 500; }
+  .arrow { color: #444; font-size: 20px; }
+  footer { border-top: 1px solid #1a1a1a; padding: 32px 20px; text-align: center; color: #444; font-size: 14px; }
+  footer a { color: #666; text-decoration: none; margin: 0 12px; }
+  footer a:hover { color: #e2c27d; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Sayxronimos</h1>
+  <p>Automated educational content about stoicism and psychology — published daily to TikTok.</p>
+  <span class="badge">TikTok Creator Account</span>
+</header>
+
+<div class="container">
+
+  <h2 class="section-title">How It Works</h2>
+  <div class="flow">
+    <div class="step"><div class="num">Step 1</div><div class="label">Find Trends</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="num">Step 2</div><div class="label">Write Script</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="num">Step 3</div><div class="label">Generate Video</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="num">Step 4</div><div class="label">Analyze Quality</div></div>
+    <div class="arrow">→</div>
+    <div class="step"><div class="num">Step 5</div><div class="label">Post to TikTok</div></div>
+  </div>
+
+  <div class="features">
+    <div class="card">
+      <div class="icon">🎙️</div>
+      <h3>AI Voice Generation</h3>
+      <p>Natural neural text-to-speech in Spanish using Microsoft Edge TTS, generating voiceovers for every video.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🎞️</div>
+      <h3>Automated Video Editing</h3>
+      <p>FFmpeg pipeline combines stock footage, voiceover, background music and dynamic subtitles into a 1080×1920 vertical video.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📊</div>
+      <h3>Quality Analysis</h3>
+      <p>Every video is scored before publishing. Videos scoring below 7/10 are automatically improved and re-rendered.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📱</div>
+      <h3>TikTok Integration</h3>
+      <p>Videos are published automatically to <strong>@sayxronimos</strong> via the official TikTok Content Posting API.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🔍</div>
+      <h3>Trend Research</h3>
+      <p>Real-time search identifies the most viral stoicism and psychology topics each day to maximize reach.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏛️</div>
+      <h3>Stoic Philosophy</h3>
+      <p>Content covers Marcus Aurelius, Seneca, Epictetus and practical applications of stoicism in modern life.</p>
+    </div>
+  </div>
+
+  <div class="tiktok-section">
+    <h2>TikTok Content Posting API Integration</h2>
+    <p>
+      This application uses the official TikTok Content Posting API to publish pre-generated
+      educational videos to the creator account <strong>@sayxronimos</strong>.
+      The integration is read-only on user data and write-only for video content.
+    </p>
+    <div class="scopes">
+      <span class="scope">video.publish</span>
+      <span class="scope">video.upload</span>
+      <span class="scope">user.info.basic</span>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 Sayxronimos &nbsp;|&nbsp;
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+  </p>
+</footer>
+
+</body>
+</html>
