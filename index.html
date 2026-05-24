@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sayxronimos — Stoic Content Creator</title>
+<title>Sayxrosnimos — Stoic Content Creator</title>
+<link rel="icon" type="image/png" href="./logo.png">
 <style>
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
@@ -12,7 +13,12 @@
   }
   header {
     background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-    padding: 80px 20px; text-align: center;
+    padding: 60px 20px 48px; text-align: center;
+  }
+  header .logo-img {
+    width: 88px; height: 88px; border-radius: 20px;
+    display: block; margin: 0 auto 20px;
+    box-shadow: 0 4px 24px rgba(226,194,125,0.25);
   }
   header h1 { font-size: 48px; letter-spacing: -1px; margin-bottom: 16px;
     background: linear-gradient(90deg, #e2c27d, #f5e6c8); -webkit-background-clip: text;
@@ -22,6 +28,27 @@
     padding: 8px 20px; border-radius: 20px; font-size: 14px; font-weight: 600; }
   .container { max-width: 900px; margin: 0 auto; padding: 60px 20px; }
   .section-title { font-size: 28px; color: #e2c27d; margin-bottom: 32px; text-align: center; }
+
+  /* LOGIN SECTION */
+  .login-section {
+    background: linear-gradient(135deg, #111 0%, #1a1a2e 100%);
+    border: 2px solid #e2c27d44;
+    border-radius: 20px; padding: 48px 40px;
+    text-align: center; margin-bottom: 60px;
+  }
+  .login-section h2 { font-size: 26px; margin-bottom: 12px; color: #f5e6c8; }
+  .login-section p { color: #999; max-width: 500px; margin: 0 auto 28px; line-height: 1.7; font-size: 16px; }
+  .login-btn {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: #ff2d55; color: white; text-decoration: none;
+    padding: 16px 36px; border-radius: 14px; font-size: 18px; font-weight: 700;
+    transition: opacity .2s, transform .15s;
+    box-shadow: 0 4px 20px rgba(255,45,85,0.4);
+  }
+  .login-btn:hover { opacity: .9; transform: translateY(-2px); }
+  .login-btn svg { width: 24px; height: 24px; fill: white; }
+  .login-note { margin-top: 16px; font-size: 13px; color: #555; }
+
   .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; margin-bottom: 60px; }
   .card {
     background: #111; border: 1px solid #222; border-radius: 16px;
@@ -55,12 +82,24 @@
 <body>
 
 <header>
-  <h1>Sayxronimos</h1>
+  <img class="logo-img" src="./logo.png" alt="Sayxrosnimos">
+  <h1>Sayxrosnimos</h1>
   <p>Automated educational content about stoicism and psychology — published daily to TikTok.</p>
   <span class="badge">TikTok Creator Account</span>
 </header>
 
 <div class="container">
+
+  <!-- LOGIN ENTRY POINT -->
+  <div class="login-section">
+    <h2>Connect Your TikTok Account</h2>
+    <p>Authorize <strong>Sayxrosnimos</strong> to publish educational videos to your TikTok account using the official TikTok Content Posting API.</p>
+    <a class="login-btn" href="https://www.tiktok.com/v2/auth/authorize/?client_key=awafla4nobub07et&scope=user.info.basic,video.publish,video.upload&response_type=code&redirect_uri=https%3A%2F%2Foderflaicragzaid-star.github.io%2Fsayxronimos-legal%2Fcallback.html&state=sayxrosnimos_auth" id="tiktokLoginBtn">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.82a8.18 8.18 0 004.78 1.52V6.89a4.85 4.85 0 01-1.01-.2z"/></svg>
+      Login with TikTok
+    </a>
+    <p class="login-note">You will be redirected to TikTok to authorize access. Only the minimum required permissions will be requested.</p>
+  </div>
 
   <h2 class="section-title">How It Works</h2>
   <div class="flow">
@@ -111,7 +150,7 @@
   <div class="tiktok-section">
     <h2>TikTok Content Posting API Integration</h2>
     <p>
-      This application uses the official TikTok Content Posting API to publish pre-generated
+      The <strong>Sayxrosnimos</strong> application uses the official TikTok Content Posting API to publish pre-generated
       educational videos to the creator account <strong>@sayxronimos</strong>.
       The integration is read-only on user data and write-only for video content.
     </p>
@@ -125,7 +164,7 @@
 </div>
 
 <footer>
-  <p>© 2026 Sayxronimos &nbsp;|&nbsp;
+  <p>© 2026 Sayxrosnimos &nbsp;|&nbsp;
     <a href="privacy-policy.html">Privacy Policy</a>
     <a href="terms-of-service.html">Terms of Service</a>
   </p>
